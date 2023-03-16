@@ -23,10 +23,14 @@ html, body {
     font-family: var(--font-jamjuree);
 }
 
-main, footer  {
+main, footer {
     max-width: 1440px;
-    width: 80%;
     margin: 0 auto;
+    width: 80%;
+}
+
+p {
+    color: var(--Grayish-Blue);
 }
 
 .flex-center {
@@ -44,8 +48,9 @@ main, footer  {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 2em;
+    gap: 5vh;
     padding: 2.5em;
+    height: 620px;
 }
 
 .header-text {
@@ -57,12 +62,11 @@ main, footer  {
 }
 
 .header-text h1 {
-    font-size: 2.2em;
+    font-size: 2.4em;
 }
 .header-text p {
-    color: var(--Grayish-Blue);
-    max-width: 650px;
-    font-size: 1em;
+    max-width: 665px;
+    font-size: 1.1em;
     text-align: center;
 }
 
@@ -98,5 +102,59 @@ main, footer  {
     box-shadow: 1px 2px 4px hsl(233, 44%, 37%);
 }
 
+.sect1-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
 
+.sect1-title h2 {
+    font-size: 2em;
+}
 
+.sect1-title p {
+    font-size: 1.1em;
+    text-align: center;
+    max-width: 780px;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+}
+
+.sect1-pc {
+    position: relative;
+    top: 50%;
+    left: -15.2%;
+}
+
+.sect1-pc-in {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 20%;
+}
+
+.sect1-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+}
+
+.sect1-text p {
+    line-height: 1.5em;
+    padding-top: 14px;
+    max-width: 400px;
+}
+
+.sect1-img {
+    width: 122%;
+}
