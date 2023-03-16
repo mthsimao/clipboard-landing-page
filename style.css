@@ -1,0 +1,102 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+
+    --font-jamjuree: 'Bai Jamjuree', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 18px;
+    font-family: var(--font-jamjuree);
+}
+
+main, footer  {
+    max-width: 1440px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    background: white url(./images/bg-header-desktop.png) no-repeat;
+    background-position: top center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    padding: 2.5em;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.header-text h1 {
+    font-size: 2.2em;
+}
+.header-text p {
+    color: var(--Grayish-Blue);
+    max-width: 650px;
+    font-size: 1em;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.buttons input {
+    border-radius: 40px;
+    border: none;
+    color: white;
+    width: 190px;
+    font-family: var(--font-jamjuree);
+    font-size: 1em;
+    padding: 16px;
+    outline: none;
+    transition: all .3s ease-in-out;
+}
+.buttons input:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+.btn-ios {
+    background-color: var(--Strong-Cyan);
+    box-shadow: 1px 2px 4px  hsl(171, 44%, 37%);  
+}
+.btn-mac {
+    background-color: var(--Light-Blue);
+    box-shadow: 1px 2px 4px hsl(233, 44%, 37%);
+}
+
+
+
