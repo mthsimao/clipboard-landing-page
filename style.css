@@ -48,9 +48,8 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5vh;
-    padding: 2.5em;
-    height: 620px;
+    gap: 2em;
+    height: 550px;
 }
 
 .header-text {
@@ -125,6 +124,7 @@ p {
     display: flex;
     flex-direction: column;
     gap: 6em;
+    padding-bottom: 2em;
 }
 
 .sect1-pc {
@@ -150,11 +150,56 @@ p {
 }
 
 .sect1-text p {
-    line-height: 1.5em;
+    line-height: 1.4em;
     padding-top: 14px;
     max-width: 400px;
 }
 
 .sect1-img {
     width: 122%;
+}
+
+.section2 { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+    margin-top: 5em;
+}
+
+.sect2-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+    max-width: 680px;
+}
+.sect2-text h2 {
+    font-size: 2em;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4em;
+}
+
+.sect3-part2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 1440px;
+}   
+
+.sect3-part2-div {
+    text-align: center;
+    line-height: 1.5em;
+    max-width: 400px;
+}
+.sect3-part2-div h2{
+    margin: .9em 0;
 }
