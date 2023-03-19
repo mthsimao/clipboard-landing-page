@@ -6,7 +6,7 @@
 
 ### Links
 
-- Solution URL: [Solution](https://mthsimao.github.io/nuddle-landing-page/)
+- Solution URL: [Solution](https://mthsimao.github.io/clipboard-landing-page/)
 
 ### Built with
 
