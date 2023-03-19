@@ -145,15 +145,15 @@ p {
     gap: 20%;
 }
 
-.sect1-text {
+.sect1-pc-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4em;
+    gap: 3.8em;
 }
 
-.sect1-text p {
+.sect1-pc-text p {
     line-height: 1.4em;
     padding-top: 14px;
     max-width: 400px;
@@ -188,7 +188,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 4em;
+    gap: 2em;
 }
 
 .sect3-title {
@@ -228,6 +228,7 @@ p {
     justify-content: space-around;
     gap: 2em;
     width: 100%;
+    margin-top: 4em;
 }
 
 .sect3-part4 {
@@ -249,7 +250,7 @@ p {
 }
 
 footer {
-    background-color: rgb(231, 231, 231);
+    background-color: rgb(248, 248, 248);
     width: 100%;
     margin-top: 5em;
 }
@@ -258,10 +259,7 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    max-width: 1440px;
-    width: 80%;
-    margin: 0 auto;
+    justify-content: space-around;
     padding: 2em;
 }
 
@@ -270,39 +268,38 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 60%;
+    width: 700px;
 }
 
-.footer-links-ul {
+.footer-links-items {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    justify-content: space-between;
-    width: 72%;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 1.4em;
+    width: 550px;
 }
 
-.footer-links ul {
-    list-style-type: none;
+.footer-links-div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: .5em;
 }
 
-.footer-links ul li {
-    padding: 10px 0;
-}
-
-.footer-links ul a {
+.footer-links-div a {
     color: var(--Dark-Grayish-Blue);
-    font-size: 1.1em;
     text-decoration: none;
-    transition: all .3s ease-in-out;
+    font-size: 1.1em;
 }
 
-.footer-links ul a:hover {
+.footer-links-div a:hover {
     color: var(--Strong-Cyan);
-    cursor: pointer;
 }
+
 
 .footer-social-links {
-    width: 20%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -313,8 +310,8 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 52%;
     list-style-type: none;
+    width: 150px;
 }
 
 .footer-social-links ul a svg {
@@ -327,7 +324,111 @@ footer {
 }
 
 .img-footer {
-    width: 58px;
+    width: 74px;
 }
 
 
+@media screen and (max-width:1024px) {
+
+    .sect1-pc {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: static;
+    }
+
+    .sect1-pc-in{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4em;
+    }
+
+    .sect1-pc-text {
+        gap: 2.5em;
+        text-align: center;
+    }
+
+    .sect1-pc-text h2 {
+        font-size: 1.8em;
+    }
+
+    .sect1-pc-text p {
+        width: 340px;
+    }
+
+    .sect1-img {
+        width: 512px
+    }
+
+    .sect1-pc-text p {
+        font-size: 1em;
+        max-width: 600px;
+    }
+
+    .sect2-img {
+        width: 512px;
+    }
+
+    .footer, .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3em;
+    }
+
+    .footer-links {
+        width: auto;
+    }
+
+    .footer-links-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5em;
+    }
+
+    .footer-links-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.6em;
+    }
+
+    .img-footer {
+        width: 58px;
+    }
+}
+
+@media screen and (max-width:915px) {
+    .header-text h1 {
+        font-size: 2.2em;
+    }
+
+    .sect3-part2, .sect3-part3{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2.5em;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttons input {
+        width: 310px;
+    }
+}
+
+@media screen and (max-width:735px) {
+    .header {
+        width: ;
+    }
+}
